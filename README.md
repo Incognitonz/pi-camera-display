@@ -47,7 +47,7 @@ This application displays the Raspberry Pi Camera Module 2 feed on HDMI output w
    ```bash
    sudo apt-get update
    sudo apt-get install -y git
-   git clone https://github.com/yourusername/pi-camera-display.git
+   git clone https://https://github.com/Incognitonz/pi-camera-display.git
    cd pi-camera-display
    ```
 
