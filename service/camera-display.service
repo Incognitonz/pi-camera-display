@@ -6,7 +6,12 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/opt/pi-camera-display
-ExecStart=/usr/bin/python3 /opt/pi-camera-display/main.py
+Environment=PYTHONPATH=/opt/pi-camera-display
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/opt/pi-camera-display/venv/bin/python3 /opt/pi-camera-display/main.py
+StandardOutput=append:/var/log/camera-display.log
+StandardError=append:/var/log/camera-display.log
 Restart=always
 RestartSec=3
 
