@@ -1,4 +1,7 @@
-picamera2
-opencv-python-headless
-numpy
-RPi.GPIO
+# Core dependencies are installed via apt:
+# python3-opencv
+# python3-numpy
+# python3-rpi.gpio
+# python3-picamera2
+
+# No additional pip packages required
