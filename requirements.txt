@@ -1,0 +1,4 @@
+picamera2
+opencv-python-headless
+numpy
+RPi.GPIO

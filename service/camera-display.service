@@ -1,0 +1,14 @@
+[Unit]
+Description=Raspberry Pi Camera Display Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/pi-camera-display
+ExecStart=/usr/bin/python3 /opt/pi-camera-display/main.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
